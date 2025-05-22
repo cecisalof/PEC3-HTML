@@ -10,3 +10,9 @@ $uoc-masterbrand: #73edff;
 $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);
 
 $mqMinWidth: 420px;
+
+:root {
+  --color-sky-500: #bada55;
+  --color-uoc-corporate: #000078;
+  --color-uoc-masterbrand: #73edff;
+}
