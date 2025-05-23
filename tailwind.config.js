@@ -7,9 +7,21 @@ module.exports = {
         sky: {
           500: 'var(--color-sky-500)',
         },
-        uoc: {
-          corporate: 'var(--color-uoc-corporate)',
-          masterbrand: 'var(--color-uoc-masterbrand)',
+        brand: {
+          primary: 'var(--color-brand-primary)',
+          secondary: 'var(--color-brand-secondary)',
+          info: 'var(--color-brand-info)',
+          light: 'var(--color-brand-light)',
+          body: {
+            bg: 'var(--color-brand-body-bg)',
+            color: 'var(--color-brand-body-color)',
+          },
+          nav: {
+            link: {
+              color: 'var(--color-brand-nav-link-color)',
+              hover: 'var(--color-brand-nav-link-hover)',    
+            }
+          }
         }
       },
     },
