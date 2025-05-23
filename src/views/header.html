@@ -1,0 +1,69 @@
+<header class="header">
+  <div class="header__img-container">
+    <picture class="header__image">
+      <!-- Desktop HD (pantallas grandes > 1600px) -->
+      <source
+        srcset="./assets/images/header/hero-home-2400.avif 2x, ./assets/images/header/hero-home-1920.avif 1x"
+        type="image/avif" media="(min-width: 100em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-2400.webp 2x, ./assets/images/header/hero-home-1920.webp 1x"
+        type="image/webp" media="(min-width: 100em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-2400.jpg 2x, ./assets/images/header/hero-home-1920.jpg 1x"
+        type="image/jpeg" media="(min-width: 100em)" sizes="100vw">
+    
+      <!-- Desktop normal (1200px - 1599px) -->
+      <source
+        srcset="./assets/images/header/hero-home-1200.avif"
+        type="image/avif" media="(min-width: 75em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-1200.webp"
+        type="image/webp" media="(min-width: 75em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-1200.jpg"
+        type="image/jpeg" media="(min-width: 75em)" sizes="100vw">
+    
+      <!-- Tablet (768px - 1199px) -->
+      <source
+        srcset="./assets/images/header/hero-home-768.avif"
+        type="image/avif" media="(min-width: 48em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-768.webp"
+        type="image/webp" media="(min-width: 48em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-home-768.jpg"
+        type="image/jpeg" media="(min-width: 48em)" sizes="100vw">
+    
+      <!-- Mobile (<768px) -->
+      <source
+        srcset="./assets/images/header/hero-mobile-480.avif"
+        type="image/avif" media="(max-width: 47.99em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-mobile-480.webp"
+        type="image/webp" media="(max-width: 47.99em)" sizes="100vw">
+      <source
+        srcset="./assets/images/header/hero-mobile-480.jpg"
+        type="image/jpeg" media="(max-width: 47.99em)" sizes="100vw">
+    
+      <!-- Fallback JPG -->
+      <img src="./assets/images/header/hero-mobile-480.jpg" alt="Hands on earth"
+      class="header__image" sizes="100vw">
+    </picture>
+  </div>
+  
+  <include src="./views/navbar.html"></include>
+
+  <div class="header__content">
+    <h1 class="header__content-title">
+      Juntos, hacia un <span>futuro redondo</span>
+    </h1>
+    <h2 class="header__content-subtitle">
+      Primeras Jornadas de Economía Circular
+    </h2>
+    <div class="header__content-meta">
+      <p class="header__content-meta--date">Septiembre 2025</p>
+      <p class="header__content-meta--location">Centro Artesanal Torrearte</p>
+      <p class="header__content-meta--province">Madrid</p>
+    </div>
+  </div>
+</header>
