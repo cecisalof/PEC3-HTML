@@ -1,16 +1,29 @@
-* {
-  box-sizing: border-box;
+/**
+ * LAYOUTS
+ */
+
+
+// /* ===== Layout: Main ===== */
+.main {
+    padding: 2rem 1rem;
+    // margin-top: -7rem;
+
+    @media screen and (max-width: 932px) and (orientation: landscape) {
+        /* Estilos para mobile en landscape */
+        margin-top: auto;
+    }
+
+    @media (min-width: 768px) {
+        margin-top: auto;
+        padding: 3rem;      
+    }
+
+    @media (min-width: 1440px) {
+        padding: 3rem 10rem;  
+    }
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  margin: 0;
-  padding: 2rem;
-  font-family: $font-family-sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  background-color: var(--color-brand-bg);
-  color: var(--color-brand-corporate);
-}
+.agenda-wrapper {
+    container-type: inline-size;
+  }
+  
