@@ -4,48 +4,19 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-  <title>UOC Boilerplate</title>
+  <title>Jornadas de Economía circular</title>
 </head>
 
 <body>
-  <div class="uoc-container">
-    <picture>
-      <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-      <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-    </picture>
-    <h1 class="uoc-title">Hello, UOC!</h1>
-    <p>
-      This is a starter template for the Advanced HTML and CSS Tools courses
-      from the Master's Program in Multimedia Applications and the Master's
-      Program in Web App and Website Development at the Universitat Oberta de
-      Catalunya.
-    </p>
-  </div>
-  <figure class="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
-    <img class="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="./assets/images/logo.png" alt=""
-      width="384" height="512">
-    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
-      <blockquote>
-        <p class="text-lg font-medium">
-          “Tailwind CSS is the only framework that I've seen scale
-          on large teams. It’s easy to customize, adapts to any design,
-          and the build size is tiny.”
-        </p>
-      </blockquote>
-      <figcaption class="font-medium">
-        <div class="text-sky-500 dark:text-sky-400">
-          Sarah Dayan
-        </div>
-        <div class="text-slate-700 dark:text-slate-500">
-          Staff Engineer, Algolia
-        </div>
-        <button class="btn">PRUEBA APPLY</button>
-      </figcaption>
+  <!-- <include src="./views/header.html"></include> -->
+  <main class="main">
+    <div class="agenda-wrapper">
+      <include src="./views/agenda.html"></include>
     </div>
-  </figure>
-  <include src="./views/footer.html"></include>
+  </main>
+  <!-- <include src="./views/footer.html"></include> -->
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
