@@ -7,6 +7,10 @@ module.exports = {
         sky: {
           500: 'var(--color-sky-500)',
         },
+        uoc: {
+          corporate: 'var(--color-uoc-corporate)',
+          masterbrand: 'var(--color-uoc-masterbrand)',
+        }
       },
     },
   },
