@@ -1,0 +1,118 @@
+.conference-agenda {
+    font-family: $headings-font-family;
+
+    // Fallback: Flex layout
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+
+    &__title {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        color: var(--color-primary);
+        font-weight: 700;
+
+        @supports (display: grid) {
+            margin-bottom: 0;
+        }
+    }
+
+    &--full {
+        grid-column: 1 / -1;
+    }
+
+    &--half {
+        @container (min-width: 600px) {
+            grid-column: span 3;
+        }
+
+        @container (min-width: 1200px) {
+            grid-column: span 4;
+        }
+    }
+
+    &__event,
+    &__talk {
+        background-color: var(--color-brand-corporate);
+        padding: 1rem;
+        margin: 1rem 0;
+        border-radius: 8px;
+        color: var(--color-brand-body-color);
+        font-family: $headings-font-family;
+        text-transform: none;
+
+        @supports (display: grid) {
+            margin: 0;
+        }
+    }
+
+    &__event {
+        background-color: #f5c145;
+        text-align: left;
+    }
+
+    &__event-topic {
+        font-family: $font-family-base;
+        color: white;
+        font-weight: 600;
+        margin: 0.6rem 0;
+    }
+
+    &__event-description {
+        font-family: $font-family-base;
+        font-size: 0.8rem;
+        margin: 0.6rem 0;
+    }
+
+    &__event-time {
+        margin-bottom: 0;
+    }
+
+    &__talk {
+        background-color: $cards-bg;
+
+        &-time {
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        &-topic {
+            font-family: $font-family-base;
+            color: white;
+            font-weight: 600;
+            margin: 0.6rem 0;
+        }
+
+        &-description {
+            font-family: $font-family-base;
+            font-size: 0.8rem;
+            margin: 0.6rem 0;
+        }
+
+        &-speaker {
+            font-weight: 500;
+            margin-bottom: 0;
+
+            &-position {
+                font-weight: 300;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    // Mejora progresiva: Grid con container queries
+    @supports (display: grid) {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @container (min-width: 600px) {
+            grid-template-columns: repeat(6, 1fr);
+        }
+
+        @container (min-width: 1200px) {
+            grid-template-columns: repeat(8, 1fr);
+        }
+    }
+}

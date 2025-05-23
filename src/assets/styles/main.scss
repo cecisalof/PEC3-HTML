@@ -8,8 +8,9 @@
 /**
  * Import variables
  */
-
 @import "variables";
+// Components (UI reutilizable)
+@import "components/index";
 
 /**
  * Import npm dependencies
