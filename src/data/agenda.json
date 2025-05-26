@@ -1,0 +1,85 @@
+[
+  {
+    "type": "event",
+    "time": "09:00",
+    "title": "Recepción y acreditaciones"
+  },
+  {
+    "type": "event",
+    "time": "10:00",
+    "title": "Inauguración oficial"
+  },
+  {
+    "type": "section",
+    "title": "Ponencias:"
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 10:30 hrs",
+    "topic": "♻️ Innovaciones en la circularidad de materiales electrónicos",
+    "speaker": "Walter R. Stahel",
+    "position": "Fundador del Product-Life Institute",
+    "description": "Exploramos cómo extender la vida útil de los productos electrónicos mediante estrategias de reutilización, remanufactura y diseño circular."
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 11:30 hrs",
+    "topic": "🌎 Retos y oportunidades en la gestión de residuos urbanos",
+    "speaker": "Jocelyn Blériot",
+    "position": "Fundación Ellen MacArthur",
+    "description": "Un análisis de los sistemas de gestión de residuos en ciudades modernas y cómo la economía circular ofrece soluciones sostenibles."
+  },
+  {
+    "type": "event",
+    "time": "12:00",
+    "title": "Pausa - aperitivo"
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 12:30 hrs",
+    "topic": "🔄 El rol del ecodiseño en la transición circular",
+    "speaker": "Leyla Acaroglu",
+    "position": "Fundadora de Disrupt Design",
+    "description": "Descubre cómo el diseño consciente puede transformar productos y servicios, reduciendo impactos y cerrando ciclos de materiales."
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 13:30 hrs",
+    "topic": "🌿 Modelos de negocio circulares: casos de éxito en Europa",
+    "speaker": "Ken Webster",
+    "position": "Autor y consultor en economía circular",
+    "description": "Ejemplos prácticos de empresas que están liderando la economía circular, generando valor económico y ambiental."
+  },
+  {
+    "type": "event",
+    "time": "14:30",
+    "title": "Pausa - comida"
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 15:30 hrs",
+    "topic": "⚙️ Tecnologías emergentes para impulsar la economía circular",
+    "speaker": "Michael Braungart",
+    "position": "Cofundador de Cradle to Cradle",
+    "description": "Nuevas herramientas digitales y técnicas avanzadas que potencian la circularidad, desde blockchain hasta inteligencia artificial."
+  },
+  {
+    "type": "talk",
+    "time": "03 de Sept - 16:30 hrs",
+    "topic": "🏛️ Políticas públicas y marcos regulatorios para acelerar la circularidad",
+    "speaker": "Virginijus Sinkevičius",
+    "position": "Comisario Europeo de Medio Ambiente, Océanos y Pesca",
+    "description": "Una visión de las normativas europeas y globales que están fomentando la transición hacia modelos de producción y consumo circulares."
+  },
+  {
+    "type": "section",
+    "title": "Cierre:"
+  },
+  {
+    "type": "event",
+    "time": "17:30",
+    "title": "Mesa redonda",
+    "topic": "🤝 El futuro de la economía circular: retos y alianzas",
+    "description": "Expertos internacionales debaten sobre innovación, cooperación y educación para consolidar una economía verdaderamente circular hacia 2030."
+  }
+]
