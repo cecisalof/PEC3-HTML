@@ -4,25 +4,25 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        sky: {
-          500: 'var(--color-sky-500)',
-        },
         brand: {
-          primary: 'var(--color-brand-primary)',
-          secondary: 'var(--color-brand-secondary)',
-          info: 'var(--color-brand-info)',
-          light: 'var(--color-brand-light)',
+          primary: 'var(--color-brand-primary)',        // #008878
+          secondary: 'var(--color-brand-secondary)',    // #EAAE17
+          info: 'var(--color-brand-info)',              // #005878
+          light: 'var(--color-brand-light)',            // #FAFAF9
+          bg: 'var(--color-brand-body-bg)',             // #ffffff
+          text: 'var(--color-brand-body-text)',         // #2e2e2e
+          cards: 'var(--color-brand-cards-bg)',         // rgba(0, 136, 120, 0.7)
+          cardsSecondary: 'var(--color-brand-cards-bg-secondary)', // rgba(234, 174, 23, 0.5)
           body: {
-            bg: 'var(--color-brand-body-bg)',
-            color: 'var(--color-brand-body-color)',
+            color: 'var(--color-brand-body-color)',     // #000
           },
           nav: {
             link: {
-              color: 'var(--color-brand-nav-link-color)',
-              hover: 'var(--color-brand-nav-link-hover)',    
+              color: 'var(--color-brand-nav-link-color)',   // #000
+              hover: 'var(--color-brand-nav-link-hover)',   // #fff
             }
           }
-        }
+        },
       },
       fontFamily: {
         headings: ['"Poppins"', 'sans-serif'],
