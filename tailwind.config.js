@@ -24,6 +24,10 @@ module.exports = {
           }
         }
       },
+      fontFamily: {
+        headings: ['"Poppins"', 'sans-serif'],
+        base: ['"Open Sans"', 'sans-serif'],
+      },
     },
   },
   plugins: [],
