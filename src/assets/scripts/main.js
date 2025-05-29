@@ -15,21 +15,21 @@ import agenda from "../../data/agenda.json";
 
 function renderTalk(talk) {
   return `
-    <div class="talk-card agenda-box bg-brand-cards text-white col-span-full md:col-span-3 xl:col-span-4">
-      <p class="text-sm font-semibold">${talk.time}</p>
-      <p class="text-base font-bold my-2">${talk.topic}</p>
+    <div class="talk-card agenda-box bg-brand-cards col-span-full md:col-span-3 xl:col-span-4">
+      <p class="text-sm font-bold">${talk.time}</p>
+      <p class="text-base font-semibold my-2 text-white">${talk.topic}</p>
       <p class="text-sm font-medium">${talk.speaker}</p>
-      <p class="text-xs italic mb-2">${talk.position}</p>
-      <p class="text-sm">${talk.description}</p>
+      <p class="text-xs mb-2 font-light">${talk.position}</p>
+      <p class="text-xs font-normal">${talk.description}</p>
     </div>
   `;
 }
 
 function renderEvent(event) {
   return `
-    <div class="agenda-box bg-brand-secondary text-white col-span-full">
-      <p class="text-sm font-semibold">${event.time} | ${event.title}</p>
-      ${event.topic ? `<p class="font-bold">${event.topic}</p>` : ""}
+    <div class="agenda-box bg-brand-secondary col-span-full">
+      <p class="text-sm">${event.time} | ${event.title}</p>
+      ${event.topic ? `<p class="font-bold  text-white">${event.topic}</p>` : ""}
       ${event.description ? `<p class="text-sm">${event.description}</p>` : ""}
     </div>
   `;

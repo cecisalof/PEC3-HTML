@@ -17,14 +17,14 @@
   }
 
   .agenda-box {
-    @apply p-4 my-4 rounded-lg text-white font-headings;
+    @apply p-4 my-4 rounded-lg font-headings;
   }
 
   .talk-box {
-    @apply bg-brand-cards text-white font-base rounded-lg p-4 my-4;
+    @apply bg-brand-cardsite font-base rounded-lg p-4 my-4;
   }
 
   .event-box {
-    @apply bg-brand-secondary text-left text-white rounded-lg p-4 my-4;
+    @apply bg-brand-secondary text-left rounded-lg p-4 my-4;
   }
 }
