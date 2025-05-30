@@ -36,7 +36,7 @@ function renderEvent(event) {
 }
 
 function renderSection(title) {
-  return `<h4 class="agenda-title col-span-full">${title}</h4>`;
+  return `<h4 class="agenda-title col-span-full xl-plus:text-white">${title}</h4>`;
 }
 
 
