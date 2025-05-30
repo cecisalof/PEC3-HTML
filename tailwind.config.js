@@ -25,8 +25,14 @@ module.exports = {
         },
       },
       fontFamily: {
-        headings: ['"Poppins"', 'sans-serif'],
-        base: ['"Open Sans"', 'sans-serif'],
+        heading: ['Poppins', 'sans-serif'],
+        base: ['Open Sans', 'sans-serif'],
+      },
+      screens: {
+        'xl-plus': '1440px',
+      },
+      backgroundImage: {
+        'hero-bg': "url('../images/hero-about.jpg')",
       },
     },
   },
