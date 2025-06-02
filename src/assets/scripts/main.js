@@ -54,3 +54,18 @@ document.addEventListener("DOMContentLoaded", () => {
     agendaContainer.insertAdjacentHTML("beforeend", html);
   });
 });
+
+window.addEventListener("scroll", function () {
+  const navbar = document.getElementById("navbar");
+  const header = document.querySelector('header');
+
+  const headerHeight = header && header.offsetHeight;
+  console.log("scrollY:", window.scrollY, "headerHeight:", headerHeight);
+
+  
+  if (window.scrollY > headerHeight) {
+    navbar.classList.replace("nav-transparent", "nav-solid");
+  } else {
+    navbar.classList.replace("nav-solid", "nav-transparent");
+  }
+});

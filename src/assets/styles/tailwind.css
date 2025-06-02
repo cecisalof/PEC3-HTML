@@ -78,6 +78,16 @@
   }
 }
 
+
+/* styles.css o archivo global */
+.nav-transparent {
+  @apply bg-transparent z-50 transition-all duration-300;
+}
+
+.nav-solid {
+  @apply bg-brand-primary shadow-md backdrop-blur z-[999] transition-all duration-300;
+}
+
 /* @layer utilities {
     .after\:bg-primary::after {
       background-color: var(--color-primary);
