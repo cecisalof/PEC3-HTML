@@ -9,33 +9,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-
-// Tipografías
-$font-family-sans-serif: "Open Sans", sans-serif;
-$font-family-base: $font-family-sans-serif;
-$headings-font-family: "Poppins", sans-serif;
-
 // // Colores 
 $cards-bg: hsla(173, 100%, 27%, 0.7); // Color de fondo de las tarjetas
 $cards-bg-secondary: hsla(48, 85%, 59%, 0.5); // Color de fondo secundario de las tarjetas
 
-// $brand-corporate: #000078;
-// $brand-masterbrand: #73edff;
-// $brand-bg: color.scale($brand-masterbrand, $lightness: 70%);
 $brand-bg: color.scale(violet, $lightness: 70%);
-
-// :root {
-//   --color-sky-500: #bada55;
-//   --color-brand-primary: hsl(173, 100%, 27%);
-//   --color-brand-secondary: red;
-//   --color-brand-info: #00f;
-//   --color-brand-light: #fff;
-//   --color-brand-body-bg: #fff;
-//   --color-brand-body-color: #000;
-//   --color-brand-nav-link-color: #000;
-//   --color-brand-nav-link-hover: #fff;
-//   --color-brand-bg: #{$brand-bg};
-// }
 
 :root {
   /* === Fallbacks (HSL) === */
@@ -44,7 +22,7 @@ $brand-bg: color.scale(violet, $lightness: 70%);
   --color-brand-info: hsl(198, 100%, 18%);        /* #005878 */
   --color-brand-light: hsl(60, 20%, 98%);         /* #FAFAF9 */
   --color-brand-body-bg: hsl(0, 0%, 100%);
-  --color-brand-body-color: #000;
+  --color-brand-body-color: #2D2D2D;
   --color-brand-body-text: hsl(0, 0%, 18%);
   --color-brand-cards-bg: hsla(173, 100%, 27%, 0.7);
   --color-brand-cards-bg-secondary: hsla(48, 85%, 59%, 0.5);
@@ -58,7 +36,7 @@ $brand-bg: color.scale(violet, $lightness: 70%);
     --color-brand-info: oklch(38.91% 0.13 240.31);
     --color-brand-light: oklch(98.3% 0.005 90);
     --color-brand-body-bg: oklch(100% 0 0);
-    --color-brand-body-color: #000;
+    --color-brand-body-color: #2D2D2D;
     --color-brand-body-text: oklch(26.2% 0.01 270);
     --color-brand-cards-bg: color-mix(in oklab, oklch(63.19% 0.14 188.61), transparent 30%);
     --color-brand-cards-bg-secondary: color-mix(in oklab, oklch(80.5% 0.28 99.29), transparent 50%);
