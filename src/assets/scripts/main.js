@@ -56,16 +56,30 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 window.addEventListener("scroll", function () {
-  const navbar = document.getElementById("navbar");
+  const navbarMobile = document.getElementById("navbar");
+  const navbarXL = document.getElementById("navbar-xl");      // para ≥ 1440px
   const header = document.querySelector('header');
 
-  const headerHeight = header && header.offsetHeight;
-  console.log("scrollY:", window.scrollY, "headerHeight:", headerHeight);
+  // Detecta si el header es visible (no oculto por Tailwind)
+  const headerVisible = header && header.offsetHeight > 0;
+  console.log(headerVisible);
+  // Usa la altura real del header si es visible, o un fallback
+  const headerHeight = headerVisible ? header.offsetHeight : 100;
 
-  
-  if (window.scrollY > headerHeight) {
-    navbar.classList.replace("nav-transparent", "nav-solid");
-  } else {
-    navbar.classList.replace("nav-solid", "nav-transparent");
-  }
+  // Función que aplica clases según scroll
+  const handleNavbar = (navbar) => {
+    if (!navbar) return;
+
+    if (window.scrollY > headerHeight) {
+      navbar.classList.add("nav-solid");
+      navbar.classList.remove("nav-transparent");
+    } else {
+      navbar.classList.add("nav-transparent");
+      navbar.classList.remove("nav-solid");
+    }
+  };
+
+  handleNavbar(navbarMobile);
+  handleNavbar(navbarXL);
+
 });
