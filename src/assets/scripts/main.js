@@ -30,9 +30,9 @@ links.forEach(link => {
 
 function renderTalk(talk) {
   return `
-<div class="talk-card agenda-box bg-brand-cards col-span-full md:col-span-3 xl:col-span-4 font-heading">
+<div class="talk-card agenda-box bg-brand-cards col-span-full md:col-span-3 xl:col-span-4">
   <p class="text-sm md:text-base font-bold uppercase">${talk.time}</p>
-  <p class="text-base md:text-lg font-semibold my-2 text-white">${talk.topic}</p>
+  <p class="text-base md:text-lg font-semibold my-2 text-white font-serif">${talk.topic}</p>
   <p class="text-sm md:text-base font-semibold">${talk.speaker}</p>
   <p class="text-xs md:text-sm mb-2 font-light">${talk.position}</p>
   <p class="text-xs md:text-sm font-normal my-4">${talk.description}</p>
@@ -44,7 +44,7 @@ function renderEvent(event) {
   return `
     <div class="agenda-box bg-brand-secondary col-span-full">
       <p class="text-sm md:text-base">${event.time} | ${event.title}</p>
-      ${event.topic ? `<p class="font-bold my-2  text-white text-base md:text-lg">${event.topic}</p>` : ""}
+      ${event.topic ? `<p class="font-bold my-2  text-white text-base md:text-lg font-serif">${event.topic}</p>` : ""}
       ${event.description ? `<p class="my-2 text-xs md:text-sm">${event.description}</p>` : ""}
     </div>
   `;
