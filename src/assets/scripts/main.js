@@ -12,6 +12,21 @@
 
 import agenda from "../../data/agenda.json";
 
+// Add event listener to active link on desktop navbar & footer
+const links = document.querySelectorAll('.nav-link');
+const currentUrl = window.location.pathname.replace(/\/$/, '');
+;
+console.log(`Current URL: ${currentUrl}`);
+
+
+links.forEach(link => {
+  if (link.getAttribute('href').replace(/\/$/, '') === currentUrl) {
+    link.classList.add('active');
+  } else {
+    link.classList.remove('active');
+  }
+});
+
 
 function renderTalk(talk) {
   return `
@@ -55,6 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+// Add event listener to change navbar background on scroll
 window.addEventListener("scroll", function () {
   const navbarMobile = document.getElementById("navbar");
   const navbarXL = document.getElementById("navbar-xl");      // para ≥ 1440px
@@ -62,7 +78,7 @@ window.addEventListener("scroll", function () {
 
   // Detecta si el header es visible (no oculto por Tailwind)
   const headerVisible = header && header.offsetHeight > 0;
-  console.log(headerVisible);
+
   // Usa la altura real del header si es visible, o un fallback
   const headerHeight = headerVisible ? header.offsetHeight : 100;
 
