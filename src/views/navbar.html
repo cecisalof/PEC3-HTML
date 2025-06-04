@@ -1,12 +1,12 @@
 <nav id="navbar" class="fixed top-0 xl:py-2 w-full bg-transparent nav-transparent z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+  <div class="mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
     <!-- Logo -->
     <a href="/" class="text-xl font-bold">
       <img class="w-10 sm:w-12 md:w-16 lg:w-18 xl:w-20 h-auto" src="./assets/images/logo.png" alt="">
     </a>
 
     <!-- Botón hamburguesa (solo visible en móvil) -->
-    <button class="block lg:hidden text-gray-700 focus:outline-none" aria-label="Toggle menu">
+    <button class="block md:hidden text-brand-light focus:outline-none" aria-label="Toggle menu">
       <!-- Ícono de hamburguesa simple -->
       <svg class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"
         viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
@@ -15,7 +15,7 @@
     </button>
 
     <!-- Menú (visible solo en desktop) -->
-    <div class="hidden lg:flex space-x-8">
+    <div class="hidden md:flex space-x-8">
       <a href="/" class="text-brand-light hover:text-brand-secondary font-bold nav-link active prueba">Inicio</a>
       <!-- <a href="/speakers" class="text-brand-light hover:text-brand-secondary font-bold">Programa</a> -->
       <a href="/about" class="text-brand-light hover:text-brand-secondary font-bold nav-link">Sobre las jornadas</a>
