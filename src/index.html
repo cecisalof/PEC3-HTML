@@ -20,21 +20,21 @@
       </a>
 
       <div class="hidden lg:flex space-x-8">
-        <a href="/" class="text-brand-light hover:text-brand-secondary font-bold">Inicio</a>
-        <a href="/about" class="text-brand-light hover:text-brand-secondary font-bold">Sobre las jornadas</a>
+        <a href="/" class="text-brand-light hover:text-brand-secondary font-bold nav-link active">Inicio</a>
+        <a href="/about" class="text-brand-light hover:text-brand-secondary font-bold nav-link">Sobre las jornadas</a>
       </div>
     </div>
   </nav>
 
   <div
-    class="relative min-h-screen bg-none xl-plus:bg-hero-bg xl-plus:bg-cover xl-plus:bg-center xl-plus:bg-no-repeat xl-plus:after:content-[''] xl-plus:after:absolute xl-plus:after:inset-0 xl-plus:after:bg-brand-primary xl-plus:after:mix-blend-multiply xl-plus:after:pointer-events-none">
+    class="relative min-h-screen bg-none xl-plus:bg-hero-bg xl-plus:bg-cover xl-plus:bg-center xl-plus:bg-no-repeat xl-plus:bg-fixed xl-plus:after:content-[''] xl-plus:after:absolute xl-plus:after:inset-0 xl-plus:after:bg-brand-primary xl-plus:after:mix-blend-multiply xl-plus:after:pointer-events-none">
     <main class="main relative xl-plus:z-10 top-5">
       <div class="agenda-wrapper">
         <include src="./views/agenda.html"></include>
       </div>
     </main>
   </div>
-  <!-- <include src="./views/footer.html"></include> -->
+  <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
 </body>
 
