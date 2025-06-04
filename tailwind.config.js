@@ -26,8 +26,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        heading: ['Poppins', 'sans-serif'],
-        base: ['Open Sans', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif'],
+        serif: ['Roboto Slab', 'serif'],
       },
       screens: {
         'xl-plus': '1440px',
