@@ -85,7 +85,11 @@
 }
 
 .nav-solid {
-  @apply bg-brand-primary shadow-md backdrop-blur z-[999] transition-all duration-300;
+  @apply bg-brand-primaryDark shadow-md backdrop-blur z-[999] transition-all duration-300;
+}
+
+.active {
+  @apply text-brand-secondary;
 }
 
 /* @layer utilities {
