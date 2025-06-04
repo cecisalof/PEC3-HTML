@@ -12,10 +12,27 @@
 <body>
   <include src="./views/header.html"></include>
   <include src="./views/navbar.html"></include>
-
   <div
     class="relative min-h-screen bg-none xl-plus:bg-hero-bg xl-plus:bg-cover xl-plus:bg-center xl-plus:bg-no-repeat xl-plus:bg-fixed xl-plus:after:content-[''] xl-plus:after:absolute xl-plus:after:inset-0 xl-plus:after:bg-brand-primary xl-plus:after:mix-blend-multiply xl-plus:after:pointer-events-none">
     <main class="main relative xl-plus:z-10 top-5">
+      <!-- Texto visible solo en xl-plus -->
+      <div
+        class="hidden xl-plus:flex justify-between text-left px-4 py-12 text-white">
+        <div>
+          <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
+            Juntos, hacia un <span class="text-green-300">futuro redondo</span>
+          </h1>
+          <h2 class="text-xl sm:text-2xl md:text-3xl font-medium mb-6">
+            Primeras Jornadas de Economía Circular
+          </h2>
+        </div>
+        <div class="text-base sm:text-lg md:text-xl space-y-1">
+          <p>Septiembre 2025</p>
+          <p>Centro Artesanal Torrearte</p>
+          <p>Madrid</p>
+        </div>
+      </div>
+
       <div class="agenda-wrapper">
         <include src="./views/agenda.html"></include>
       </div>
