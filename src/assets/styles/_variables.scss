@@ -18,6 +18,7 @@ $brand-bg: color.scale(violet, $lightness: 70%);
 :root {
   /* === Fallbacks (HSL) === */
   --color-brand-primary: hsl(173, 100%, 27%);     /* #008878 */
+  --color-brand-primaryDark: hsl(174, 100%, 27%); /* #008a7a */
   --color-brand-secondary: hsl(43, 85%, 56%);     /* #EAAE17 */
   --color-brand-info: hsl(198, 100%, 18%);        /* #005878 */
   --color-brand-light: hsl(60, 20%, 98%);         /* #FAFAF9 */
