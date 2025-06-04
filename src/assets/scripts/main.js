@@ -42,7 +42,7 @@ function renderTalk(talk) {
 
 function renderEvent(event) {
   return `
-    <div class="agenda-box bg-brand-secondary col-span-full">
+    <div class="agenda-box bg-brand-secondary col-span-full xl-plus:text-center">
       <p class="text-sm md:text-base">${event.time} | ${event.title}</p>
       ${event.topic ? `<p class="font-bold my-2  text-white text-base md:text-lg font-serif">${event.topic}</p>` : ""}
       ${event.description ? `<p class="my-2 text-xs md:text-sm">${event.description}</p>` : ""}
@@ -51,7 +51,7 @@ function renderEvent(event) {
 }
 
 function renderSection(title) {
-  return `<h4 class="agenda-title col-span-full xl-plus:text-white">${title}</h4>`;
+  return `<h4 class="agenda-title col-span-full xl-plus:hidden">${title}</h4>`;
 }
 
 
