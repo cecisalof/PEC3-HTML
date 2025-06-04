@@ -5,10 +5,11 @@
   "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
   "scripts": {
     "parcel:serve": "parcel -p 8123 --target web --open",
-    "parcel:build": "parcel build --target web --no-source-maps --no-cache",
+    "parcel:build": "parcel build --target web --no-source-maps --no-cache --no-autoinstall",
+    "postbuild:copy-static": "cp _redirects dist/_redirects",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean parcel:build postbuild:copy-static",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "targets": {
