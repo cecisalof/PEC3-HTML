@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         brand: {
           primary: 'var(--color-brand-primary)',        // #008878
+          primaryDark: 'var(--color-brand-primary-dark)', // ##008a7a
           secondary: 'var(--color-brand-secondary)',    // #EAAE17
           info: 'var(--color-brand-info)',              // #005878
           light: 'var(--color-brand-light)',            // #FAFAF9
