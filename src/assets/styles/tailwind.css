@@ -71,11 +71,11 @@
   }
 
   .agenda-title {
-    @apply uppercase text-brand-primary font-heading font-bold;
+    @apply uppercase text-brand-primary font-sans font-bold;
   }
 
   .agenda-box {
-    @apply p-4 my-2 rounded-lg font-heading;
+    @apply p-4 my-2 rounded-lg font-sans;
   }
 }
 
@@ -91,10 +91,4 @@
 
 .active {
   @apply text-brand-secondary;
-}
-
-@layer utilities {
-  .font-heading {
-    font-family: 'Poppins', sans-serif;
-  }
 }
