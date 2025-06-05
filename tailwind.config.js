@@ -33,7 +33,7 @@ module.exports = {
         'xl-plus': '1440px',
       },
       backgroundImage: {
-        'hero-bg': "url('../images/hero-about.jpg')",
+        'hero-bg': "url('../images/header-blog.jpg')",
       },
     },
   },
