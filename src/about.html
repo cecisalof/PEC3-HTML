@@ -5,26 +5,26 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width" />
   <title>Jornadas de Economía circular</title>
-  <link rel="stylesheet" href="./assets/styles/tailwind.css" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
 </head>
 
-<body class="bg-white text-gray-800 font-sans">
-  <header class="bg-green-100">
-    <div class="w-full">
-      <include src="./components/picture-about.html"></include>
-    </div>
-    <include src="./views/navbar.html"></include>
+<body>
+  <header class="relative w-full h-screen md:h-[32rem] overflow-hidden">
+    <include src="./components/picture-about.html"></include>
 
-    <div class="text-center py-10 px-4">
-      <h1 class="text-4xl font-bold">¿Futuro redondo?</h1>
-      <p class="text-lg text-gray-600 mt-2">Por el equipo organizador</p>
+    <!-- Texto superpuesto -->
+    <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-20 z-10">
+      <h1 class="text-4xl font-bold text-white">¿Futuro redondo?</h1>
+      <p class="text-lg text-brand-secondary mt-2">Por el equipo organizador</p>
     </div>
   </header>
+  <include src="./views/navbar.html"></include>
 
   <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
     <section>
       <blockquote class="italic text-xl border-l-4 border-green-500 pl-4 mb-4">
-        "La economía circular no es una opción, es una necesidad urgente para mantenernos dentro de los límites del planeta." — Walter R. Stahel
+        "La economía circular no es una opción, es una necesidad urgente para mantenernos dentro de los límites del
+        planeta." — Walter R. Stahel
       </blockquote>
       <p class="text-base leading-relaxed">
         En un mundo donde los recursos naturales se agotan a un ritmo alarmante...
@@ -38,17 +38,20 @@
       </p>
 
       <article class="mb-6">
-        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">1</span>Economía Circular</h3>
+        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">1</span>Economía
+          Circular</h3>
         <p class="mt-2">Es un modelo económico que busca romper con el ciclo lineal de "usar y desechar"...</p>
       </article>
 
       <article class="mb-6">
-        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">2</span>Gestión de Residuos</h3>
+        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">2</span>Gestión
+          de Residuos</h3>
         <p class="mt-2">Se refiere al conjunto de acciones enfocadas en recolectar, tratar, reutilizar o reciclar...</p>
       </article>
 
       <article class="mb-6">
-        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">3</span>Compostaje</h3>
+        <h3 class="text-xl font-bold"><span
+            class="bg-green-200 text-green-800 rounded-full px-2 mr-2">3</span>Compostaje</h3>
         <p class="mt-2">Es el proceso natural mediante el cual los residuos orgánicos se descomponen...</p>
       </article>
     </section>
@@ -60,8 +63,10 @@
       </blockquote>
       <h2 class="text-2xl font-semibold mb-4">Sobre las jornadas</h2>
       <p class="mb-4">Promover jornadas de economía circular en la Sierra de Madrid...</p>
-      <p class="mb-4">La jornada se celebrará el 13 y 14 de septiembre de 2025 en el <span class="font-medium">Centro Artesanal Torrearte</span>...</p>
-      <p class="mb-4">Durante dos días, se abordarán temas como <span class="font-medium">la ecología industrial...</span></p>
+      <p class="mb-4">La jornada se celebrará el 13 y 14 de septiembre de 2025 en el <span class="font-medium">Centro
+          Artesanal Torrearte</span>...</p>
+      <p class="mb-4">Durante dos días, se abordarán temas como <span class="font-medium">la ecología
+          industrial...</span></p>
     </section>
 
     <section>
@@ -76,7 +81,8 @@
       <figure class="my-6">
         <picture>
           <source srcset="./assets/images/about/huerta-mobile.jpg" media="(max-width: 768px)" />
-          <img src="./assets/images/about/huerta.jpg" alt="huerta CSA Vega del Jarama" class="w-full rounded-lg shadow" loading="lazy" />
+          <img src="./assets/images/about/huerta.jpg" alt="huerta CSA Vega del Jarama" class="w-full rounded-lg shadow"
+            loading="lazy" />
         </picture>
         <figcaption class="text-sm text-center mt-2">Imagen de la huerta CSA Vega del Jarama en Torremocha</figcaption>
       </figure>

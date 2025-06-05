@@ -72,8 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Add event listener to change navbar background on scroll
 window.addEventListener("scroll", function () {
-  const navbarMobile = document.getElementById("navbar");
-  const navbarXL = document.getElementById("navbar-xl");      // para ≥ 1440px
+  const navbar= document.getElementById("navbar");
   const header = document.querySelector('header');
 
   // Detecta si el header es visible (no oculto por Tailwind)
@@ -95,7 +94,7 @@ window.addEventListener("scroll", function () {
     }
   };
 
-  handleNavbar(navbarMobile);
-  handleNavbar(navbarXL);
+  handleNavbar(navbar);
+  // handleNavbar(navbarXL);
 
 });
