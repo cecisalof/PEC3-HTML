@@ -70,12 +70,14 @@
     @apply agenda-box bg-brand-cards text-white;
   }
 
-  .agenda-title {
-    @apply uppercase text-brand-primary font-sans font-bold;
+  .link-highlight {
+    @apply font-semibold no-underline transition-all duration-300 ease-in-out;
+    color: #008a7a;
+    box-shadow: inset 0 -0.45em #efcc3e80;
   }
 
-  .agenda-box {
-    @apply p-4 my-2 rounded-lg font-sans;
+  .link-highlight:hover {
+    box-shadow: inset 0 -1em 0 hsla(48, 85%, 59%, 0.5);
   }
 }
 

@@ -29,13 +29,16 @@ module.exports = {
         sans: ['Poppins', 'sans-serif'],
         serif: ['Roboto Slab', 'serif'],
         openSans: ['"Open Sans"', 'sans-serif'],
-        
+
       },
       screens: {
         'xl-plus': '1440px',
       },
       backgroundImage: {
         'hero-bg': "url('../images/header-blog.jpg')",
+      },
+      letterSpacing: {
+        ultra: '0.5rem',
       },
     },
   },
