@@ -8,23 +8,23 @@
   <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
 </head>
 
-<body>
+<body class="font-openSans">
   <header class="relative w-full h-90vh md:h-80dvh md:h-80vh overflow-hidden">
     <include src="./components/picture-about.html"></include>
 
     <!-- Texto superpuesto -->
     <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-20 z-10">
-      <h1 class="text-4xl font-bold text-white">¿Futuro redondo?</h1>
-      <p class="text-lg text-brand-secondary mt-2">Por el equipo organizador</p>
+      <h1 class="text-4xl font-medium text-white">¿Futuro redondo?</h1>
+      <p class="text-md italic text-brand-secondary mt-2">Por el equipo organizador</p>
     </div>
   </header>
   <include src="./views/navbar.html"></include>
 
-  <main class="container mx-auto px-4 sm:px-6 lg:px-24 py-6">
-    <div class="border-t border-dashed border-primary pt-4">
+  <main class="container mx-auto px-4 sm:px-6 lg:px-36 py-6">
+    <div class="pt-4">
       <!-- Intro Quote Section -->
-      <section class="flex flex-col md:flex-row gap-6 w-full mx-auto items-stretch">
-        <blockquote class="flex-1 bg-light border-l-4 border-primary italic text-xl md:text-2xl p-4">
+      <section class="flex flex-col md:flex-row gap-6 w-full mx-auto items-center">
+        <blockquote class="flex-1 bg-[#fbfbf9] border-l-4 border-brand-primary italic text-xl md:text-2xl p-4 font-light">
           "La economía circular no es una opción, es una necesidad urgente para mantenernos dentro de los
           límites del planeta." — Walter R. Stahel
         </blockquote>
@@ -36,7 +36,7 @@
       </section>
 
       <!-- Conceptos Clave -->
-      <section class="grid gap-6 my-12 py-8 border-y border-cards-bg-secondary">
+      <section class="grid gap-6 my-12 py-8 border-y border-brand-secondary">
         <h2 class="text-primary tracking-widest text-xl sm:text-2xl my-6">Conceptos clave</h2>
 
         <p class="text-base md:text-lg">
