@@ -4,21 +4,21 @@
 
 
 // /* ===== Layout: Main ===== */
-.main {
-    padding: 2rem 1rem;
-    // margin-top: -7rem;
+// .main {
+//     padding: 2rem 1rem;
+//     margin-top: -7rem;
 
-    @media screen and (max-width: 932px) and (orientation: landscape) {
-        /* Estilos para mobile en landscape */
-        margin-top: auto;
-    }
+//     @media screen and (max-width: 932px) and (orientation: landscape) {
+//         /* Estilos para mobile en landscape */
+//         margin-top: auto;
+//     }
 
-    @media (min-width: 768px) {
-        margin-top: auto;
-        padding: 3rem;      
-    }
+//     @media (min-width: 768px) {
+//         margin-top: auto;
+//         padding: 3rem;      
+//     }
 
-    @media (min-width: 1440px) {
-        padding: 3rem 10rem;  
-    }
-}  
+//     @media (min-width: 1440px) {
+//         padding: 3rem 10rem;  
+//     }
+// }  
