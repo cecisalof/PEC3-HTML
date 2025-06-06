@@ -20,84 +20,102 @@
   </header>
   <include src="./views/navbar.html"></include>
 
-  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
-    <section>
-      <blockquote class="italic text-xl border-l-4 border-green-500 pl-4 mb-4">
-        "La economía circular no es una opción, es una necesidad urgente para mantenernos dentro de los límites del
-        planeta." — Walter R. Stahel
-      </blockquote>
-      <p class="text-base leading-relaxed">
-        En un mundo donde los recursos naturales se agotan a un ritmo alarmante...
-      </p>
-    </section>
+  <main class="container mx-auto px-4 sm:px-6 lg:px-24 py-6">
+    <div class="border-t border-dashed border-primary pt-4">
+      <!-- Intro Quote Section -->
+      <section class="flex flex-col md:flex-row gap-6 w-full mx-auto items-stretch">
+        <blockquote class="flex-1 bg-light border-l-4 border-primary italic text-xl md:text-2xl p-4">
+          "La economía circular no es una opción, es una necesidad urgente para mantenernos dentro de los
+          límites del planeta." — Walter R. Stahel
+        </blockquote>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Conceptos clave</h2>
-      <p class="mb-6">
-        Para entender la economía circular, es fundamental familiarizarse con algunos conceptos clave...
-      </p>
+        <p class="flex-1 text-base md:text-lg">
+          En un mundo donde los recursos naturales se agotan a un ritmo alarmante, la economía circular surge como un
+          modelo necesario y transformador...
+        </p>
+      </section>
 
-      <article class="mb-6">
-        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">1</span>Economía
-          Circular</h3>
-        <p class="mt-2">Es un modelo económico que busca romper con el ciclo lineal de "usar y desechar"...</p>
-      </article>
+      <!-- Conceptos Clave -->
+      <section class="grid gap-6 my-12 py-8 border-y border-cards-bg-secondary">
+        <h2 class="text-primary tracking-widest text-xl sm:text-2xl my-6">Conceptos clave</h2>
 
-      <article class="mb-6">
-        <h3 class="text-xl font-bold"><span class="bg-green-200 text-green-800 rounded-full px-2 mr-2">2</span>Gestión
-          de Residuos</h3>
-        <p class="mt-2">Se refiere al conjunto de acciones enfocadas en recolectar, tratar, reutilizar o reciclar...</p>
-      </article>
+        <p class="text-base md:text-lg">
+          Para entender la economía circular, es fundamental familiarizarse con algunos conceptos clave...
+        </p>
 
-      <article class="mb-6">
-        <h3 class="text-xl font-bold"><span
-            class="bg-green-200 text-green-800 rounded-full px-2 mr-2">3</span>Compostaje</h3>
-        <p class="mt-2">Es el proceso natural mediante el cual los residuos orgánicos se descomponen...</p>
-      </article>
-    </section>
+        <article>
+          <h3 class="text-primary text-lg sm:text-xl mb-2">
+            <span
+              class="inline-block w-10 h-10 bg-secondary text-light font-bold rounded-full text-center leading-10 mr-2">1</span>
+            Economía Circular
+          </h3>
+          <p class="text-sm sm:text-base">Es un modelo económico que busca romper con el ciclo lineal de "usar y
+            desechar"...</p>
+        </article>
 
-    <section>
-      <blockquote class="italic border-l-4 border-green-500 pl-4 mb-4">
-        "[...] promover jornadas de economía circular en la Sierra de Madrid..."
-        <a href="https://csavegadejarama.org/" class="text-green-700 underline" target="_blank">CSA Vega del Jarama</a>
-      </blockquote>
-      <h2 class="text-2xl font-semibold mb-4">Sobre las jornadas</h2>
-      <p class="mb-4">Promover jornadas de economía circular en la Sierra de Madrid...</p>
-      <p class="mb-4">La jornada se celebrará el 13 y 14 de septiembre de 2025 en el <span class="font-medium">Centro
-          Artesanal Torrearte</span>...</p>
-      <p class="mb-4">Durante dos días, se abordarán temas como <span class="font-medium">la ecología
-          industrial...</span></p>
-    </section>
+        <article>
+          <h3 class="text-primary text-lg sm:text-xl mb-2">
+            <span
+              class="inline-block w-10 h-10 bg-secondary text-light font-bold rounded-full text-center leading-10 mr-2">2</span>
+            Gestión de Residuos
+          </h3>
+          <p class="text-sm sm:text-base">Se refiere al conjunto de acciones enfocadas en recolectar, tratar, reutilizar
+            o reciclar...</p>
+        </article>
 
-    <section>
-      <p class="mb-6">
-        Entre los ponentes destacados se encuentran...
-        <a href="#" class="text-green-700 underline">Walter R. Stahel</a>,
-        <a href="#" class="text-green-700 underline">Jocelyn Blériot</a>,
-        <a href="#" class="text-green-700 underline">Leyla Acaroglu</a>,
-        <a href="#" class="text-green-700 underline">Ken Webster</a>.
-      </p>
+        <article>
+          <h3 class="text-primary text-lg sm:text-xl mb-2">
+            <span
+              class="inline-block w-10 h-10 bg-secondary text-light font-bold rounded-full text-center leading-10 mr-2">3</span>
+            Compostaje
+          </h3>
+          <p class="text-sm sm:text-base">Es el proceso natural mediante el cual los residuos orgánicos se
+            descomponen...</p>
+        </article>
+      </section>
 
-      <figure class="my-6">
-        <picture>
-          <source srcset="./assets/images/about/huerta-mobile.jpg" media="(max-width: 768px)" />
-          <img src="./assets/images/about/huerta.jpg" alt="huerta CSA Vega del Jarama" class="w-full rounded-lg shadow"
-            loading="lazy" />
-        </picture>
-        <figcaption class="text-sm text-center mt-2">Imagen de la huerta CSA Vega del Jarama en Torremocha</figcaption>
-      </figure>
+      <!-- Detalles -->
+      <section class="my-12">
+        <div class="my-12">
+          <blockquote class="bg-light border-l-4 border-primary italic text-xl md:text-2xl p-4">
+            "[...] promover jornadas de economía circular en la Sierra de Madrid es una acción estratégica..."
+          </blockquote>
+        </div>
 
-      <p class="mb-4">Además de las conferencias, se celebrarán talleres participativos...</p>
-    </section>
+        <h2 class="text-primary tracking-widest text-xl sm:text-2xl my-6">Sobre las jornadas</h2>
 
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Ponentes invitados</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <include src="./components/card.html"></include>
-      </div>
-    </section>
+        <p class="text-base md:text-lg mb-4">Promover jornadas de economía circular en la Sierra de Madrid es una <span
+            class="font-semibold">acción estratégica</span>...</p>
+        <p class="text-base md:text-lg mb-4">La jornada se celebrará el 13 y 14 de septiembre de 2025...</p>
+        <p class="text-base md:text-lg mb-4">Durante dos días, se abordarán temas como <span class="font-semibold">la
+            ecología industrial...</span></p>
+      </section>
+
+      <!-- Speakers -->
+      <section class="my-12">
+        <p class="text-base md:text-lg mb-4">Entre los ponentes destacados se encuentran referentes globales como...</p>
+
+        <figure class="my-6">
+          <picture>
+            <source srcset="./assets/images/about/huerta-mobile.jpg" media="(max-width: 768px)">
+            <img src="./assets/images/about/huerta.jpg"
+              sizes="(max-width: 768px) 280px, (max-width: 1024px) 380px, (max-width: 1440px) 320px, 280px"
+              alt="huerta CSA Vega del Jarama" class="mx-auto max-w-full h-auto" loading="lazy">
+          </picture>
+          <figcaption class="text-center text-sm">Imagen de la huerta CSA Vega del Jarama en Torremocha</figcaption>
+        </figure>
+
+        <p class="text-base md:text-lg mb-4">Además de las conferencias, se celebrarán talleres participativos...</p>
+
+        <div class="my-12">
+          <h2 class="text-primary tracking-widest text-xl sm:text-2xl mb-6">Ponentes invitados</h2>
+          <div class="flex flex-wrap w-full mx-autow-full max-w-7xl mx-auto px-4">
+            <include src="./components/card.html"></include>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
-
   <include src="./views/footer.html"></include>
   <script type="module" src="./assets/scripts/main.js"></script>
 </body>

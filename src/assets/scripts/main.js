@@ -15,9 +15,6 @@ import agenda from "../../data/agenda.json";
 // Add event listener to active link on desktop navbar & footer
 const links = document.querySelectorAll('.nav-link');
 const currentUrl = window.location.pathname.replace(/\/$/, '');
-;
-console.log(`Current URL: ${currentUrl}`);
-
 
 links.forEach(link => {
   if (link.getAttribute('href').replace(/\/$/, '') === currentUrl) {
@@ -95,6 +92,4 @@ window.addEventListener("scroll", function () {
   };
 
   handleNavbar(navbar);
-  // handleNavbar(navbarXL);
-
 });
