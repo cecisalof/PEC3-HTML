@@ -28,6 +28,8 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
         serif: ['Roboto Slab', 'serif'],
+        openSans: ['"Open Sans"', 'sans-serif'],
+        
       },
       screens: {
         'xl-plus': '1440px',
